@@ -62,6 +62,17 @@ const SETS = {
     ],
   },
 
+  'ablation-kv': {
+    dir: 'videos/ablation/kv-cache',
+    tabs: [
+      { id: 'scene-01', label: 'Scene 1' },
+    ],
+    rows: [
+      [['condition', 'Blocks-World Condition'], ['real', 'Real Video'], ['ours', '+ Warped RoPE (Ours)']],
+      [['no-kv', 'Baseline (No KV Memory)'], ['naive-kv', '+ Naïve KV Caching'], ['instance-kv', '+ Instance-level Caching']],
+    ],
+  },
+
   appearance: {
     dir: 'videos/appearance',
     tabs: [
