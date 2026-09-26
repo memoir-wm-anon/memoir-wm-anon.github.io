@@ -400,6 +400,22 @@ function buildCopy(btn) {
   });
 }
 
+/* ---------- nav: highlight the section in view ---------- */
+
+function buildToc(nav) {
+  const links = new Map([...nav.querySelectorAll('a[href^="#"]')].map(a => [a.hash.slice(1), a]));
+  const sections = [...links.keys()].map(id => document.getElementById(id)).filter(Boolean);
+  const update = () => {
+    let current = null;
+    for (const s of sections) if (s.getBoundingClientRect().top < window.innerHeight * 0.35) current = s.id;
+    links.forEach((a, id) => a.classList.toggle('is-active', id === current));
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+}
+
+document.querySelectorAll('.toc').forEach(buildToc);
 document.querySelectorAll('.compare').forEach(buildCompare);
 document.querySelectorAll('.wipe').forEach(buildWipe);
 document.querySelectorAll('.img-slot').forEach(buildImage);
