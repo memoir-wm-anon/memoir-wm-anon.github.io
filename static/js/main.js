@@ -66,6 +66,7 @@ const SETS = {
     dir: 'videos/ablation/kv-cache',
     tabs: [
       { id: 'scene-01', label: 'Scene 1' },
+      { id: 'scene-02', label: 'Scene 2' },
     ],
     rows: [
       [['condition', 'Blocks-World Condition'], ['real', 'Real Video'], ['ours', '+ Warped RoPE (Ours)']],
