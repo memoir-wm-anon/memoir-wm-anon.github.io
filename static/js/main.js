@@ -44,7 +44,8 @@ const SETS = {
   'counterfactual-sim': {
     dir: 'videos/counterfactual',
     tabs: [
-      { id: 'carla-lanechange-smoke', label: 'Scene 1' },
+      { id: 'carla-cutin-smoke', label: 'Scene 1' },
+      { id: 'carla-beside-ctrlloss-smoke', label: 'Scene 2' },
     ],
     rows: [[['condition', 'Blocks-World Condition'], ['ours', 'MemOIR (Ours)']]],
   },
