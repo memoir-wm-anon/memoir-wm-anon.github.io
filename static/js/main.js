@@ -41,6 +41,14 @@ const SETS = {
     ],
   },
 
+  'counterfactual-sim': {
+    dir: 'videos/counterfactual',
+    tabs: [
+      { id: 'carla-lanechange-smoke', label: 'Scene 1' },
+    ],
+    rows: [[['condition', 'Blocks-World Condition'], ['ours', 'MemOIR (Ours)']]],
+  },
+
   consistency: {
     dir: 'videos/consistency',
     tabs: [
