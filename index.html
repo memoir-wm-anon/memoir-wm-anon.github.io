@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>MemOIR</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1><span class="name">MemOIR</span>: Controllable Long-Horizon Driving Video Generation with Object-level Memory</h1>
+    <!--
+    <div class="links">
+      <a class="btn is-disabled" href="#" aria-disabled="true">Paper</a>
+      <a class="btn is-disabled" href="#" aria-disabled="true">Supplementary</a>
+    </div>
+    -->
+
+    <!-- Teaser: drag to wipe between blocks-world condition and generated video -->
+    <div class="wipe" data-canvas="videos/teaser/canvas.mp4" data-gen="videos/teaser/generated.mp4"></div>
+    <div class="legend" aria-label="Blocks-world color code">
+      <span><i style="--c:var(--c-vehicle)"></i>Vehicle</span>
+      <span><i style="--c:var(--c-ped)"></i>Pedestrian</span>
+      <span><i style="--c:var(--c-cyclist)"></i>Cyclist</span>
+      <span><i style="--c:var(--c-building)"></i>Building</span>
+      <span><i style="--c:var(--c-veg)"></i>Vegetation</span>
+      <span><i style="--c:var(--c-sign)"></i>Traffic sign</span>
+    </div>
+    <p class="ph-text">Teaser caption</p>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <!-- <a href="#abstract">Abstract</a> -->
+    <!-- <a href="#method">Method</a> -->
+    <a href="#normal">Normal</a>
+    <a href="#counterfactual">Counterfactual</a>
+    <a href="#consistency">Consistency</a>
+    <a href="#appearance">Appearance</a>
+    <a href="#freeview">Free-View</a>
+    <a href="#pedestrian">Pedestrian</a>
+    <a href="#ablation">Ablation</a>
+    <!-- <a href="#bibtex">BibTeX</a> -->
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- Hidden for submission (results only); restore for camera-ready.
+  <section id="abstract">
+    <h2>Abstract</h2>
+    <div class="ph-text block">Abstract</div>
+  </section>
+
+  <section id="method">
+    <h2>Method</h2>
+    <div class="img-slot" data-src="images/method_pipeline.png" data-label="Figure: Video-to-blocks pipeline + control branch"></div>
+    <p class="ph-text">Method caption</p>
+    <div class="img-slot" data-src="images/method_kv_cache.png" data-label="Figure: Instance-level KV caching"></div>
+    <p class="ph-text">KV caching caption</p>
+  </section>
+  -->
+
+  <section id="normal">
+    <h2>Normal Driving Scenarios</h2>
+    <p class="ph-text">Section description</p>
+    <div class="compare" data-set="normal"></div>
+  </section>
+
+  <section id="counterfactual">
+    <h2>Counterfactual Scenarios</h2>
+    <p class="ph-text">Section description</p>
+    <div class="compare" data-set="counterfactual"></div>
+  </section>
+
+  <section id="consistency">
+    <h2>Long-Horizon Instance Consistency</h2>
+    <p class="ph-text">Section description</p>
+    <div class="compare" data-set="consistency"></div>
+  </section>
+
+  <section id="appearance">
+    <h2>Structure-Preserving Appearance Control</h2>
+    <p class="ph-text">Section description</p>
+    <div class="compare" data-set="appearance"></div>
+  </section>
+
+  <section id="freeview">
+    <h2>Free-View Generation</h2>
+    <p class="ph-text">Section description</p>
+    <div class="compare" data-set="freeview"></div>
+  </section>
+
+  <section id="pedestrian">
+    <h2>Pedestrian Pose Control</h2>
+    <p class="ph-text">Section description</p>
+    <div class="compare" data-set="pedestrian"></div>
+  </section>
+
+  <section id="ablation">
+    <h2>Ablations</h2>
+    <p class="ph-text">Section description</p>
+    <div class="compare" data-set="ablation"></div>
+  </section>
+
+  <!-- Hidden for submission; restore for camera-ready.
+  <section id="bibtex">
+    <h2>BibTeX</h2>
+    <div class="bib">
+      <button class="copy" type="button">Copy</button>
+<pre><code>@inproceedings{anonymous2027memoir,
+  title     = {MemOIR: Controllable Long-Horizon Driving Video Generation with Object-level Memory},
+  author    = {Anonymous},
+  booktitle = {Under review at ICLR},
+  year      = {2027}
+}</code></pre>
+    </div>
+  </section>
+  -->
+
+</main>
+
+<footer class="wrap"></footer>
+
+<script src="static/js/main.js"></script>
+</body>
+</html>
