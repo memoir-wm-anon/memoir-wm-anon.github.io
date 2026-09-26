@@ -41,15 +41,6 @@ const SETS = {
     ],
   },
 
-  'counterfactual-ours': {
-    dir: 'videos/counterfactual',
-    tabs: [
-      { id: 'B_0927_spinout019', label: 'Scene 1' },
-      { id: 'A_0770_spinout019', label: 'Scene 2' },
-    ],
-    rows: [[['condition', 'Blocks-World Condition'], ['ours', 'MemOIR (Ours)']]],
-  },
-
   consistency: {
     dir: 'videos/consistency',
     tabs: [
