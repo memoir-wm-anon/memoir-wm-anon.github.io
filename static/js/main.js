@@ -62,6 +62,18 @@ const SETS = {
     ],
   },
 
+  'long-horizon': {
+    dir: 'videos/long-horizon',
+    tabs: [
+      { id: 'uturn-01', label: 'Scene 1' },
+      { id: 'uturn-02', label: 'Scene 2' },
+    ],
+    rows: [
+      [['condition', 'Blocks-World Condition'], ['ours', 'MemOIR (Ours)']],
+      [['magi-1', 'MAGI-1'], ['epona', 'Epona']],
+    ],
+  },
+
   'ablation-kv': {
     dir: 'videos/ablation/kv-cache',
     tabs: [
