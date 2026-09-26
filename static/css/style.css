@@ -367,5 +367,7 @@ h2 {
 
 footer { padding-block: 64px 40px; color: var(--muted); font-size: 13px; text-align: center; }
 
+h3 { margin: 32px 0 12px; font-size: 18px; }
+
 /* section description */
 .desc { margin: 0 0 20px; color: var(--muted); font-size: 15px; }
