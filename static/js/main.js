@@ -16,11 +16,12 @@ const SETS = {
   normal: {
     dir: 'videos/normal',
     tabs: [
-      { id: 'scene-01', label: 'Scene 1' },
-      { id: 'scene-02', label: 'Scene 2' },
-      { id: 'scene-03', label: 'Scene 3' },
-      { id: 'rain', label: 'Rain' },
-      { id: 'night', label: 'Night' },
+      { id: 'scene-0634', label: 'Scene 1' },
+      { id: 'scene-0905', label: 'Scene 2' },
+      { id: 'scene-0094', label: 'Scene 3' },
+      { id: 'scene-0107', label: 'Scene 4' },
+      { id: 'scene-0914', label: 'Scene 5' },
+      { id: 'scene-0795', label: 'Scene 6' },
     ],
     rows: [
       [['condition', 'Blocks-World Condition'], ['real', 'Real Video'], ['ours', 'MemOIR (Ours)']],
@@ -31,14 +32,11 @@ const SETS = {
   counterfactual: {
     dir: 'videos/counterfactual',
     tabs: [
-      { id: 'ego-control-loss', label: 'Ego Control Loss' },
-      { id: 'npc-control-loss', label: 'NPC Control Loss' },
-      { id: 'oncoming-control-loss', label: 'Oncoming Control Loss' },
-      { id: 'red-light-crossing', label: 'Red-Light Crossing' },
-      { id: 'cut-out', label: 'Cut-Out' },
+      { id: 'A_0331_npcloss003', label: 'Scene 1' },
+      { id: 'B_0330_npcloss006', label: 'Scene 2' },
     ],
     rows: [
-      [['condition', 'Blocks-World Condition'], ['carla', 'CARLA Render'], ['ours', 'MemOIR (Ours)']],
+      [['condition', 'Blocks-World Condition'], ['real', 'Real Video (Before Edit)'], ['ours', 'MemOIR (Ours)']],
       BASELINES,
     ],
   },
@@ -46,13 +44,12 @@ const SETS = {
   consistency: {
     dir: 'videos/consistency',
     tabs: [
-      { id: 'clip-01', label: 'Clip 1' },
-      { id: 'clip-02', label: 'Clip 2' },
-      { id: 'clip-03', label: 'Clip 3' },
+      { id: '2021.06.23.15.18.10_veh-26_00165_02848__c72__5c7e4289', label: 'Scene 1' },
+      { id: '2021.07.16.18.06.21_veh-38_04933_05307__c16__b66d0d17', label: 'Scene 2' },
     ],
     rows: [
-      [['condition', 'Blocks-World Condition'], ['real', 'Real Video']],
-      [['no-memory', 'No Memory'], ['frame-kv', 'Frame-level KV'], ['ours', 'Instance-level KV (Ours)']],
+      [['condition', 'Blocks-World Condition'], ['real', 'Real Video'], ['ours', 'MemOIR (Ours)']],
+      BASELINES,
     ],
   },
 
