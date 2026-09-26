@@ -86,6 +86,19 @@ const SETS = {
     ],
   },
 
+  'ablation-stationary': {
+    dir: 'videos/ablation/stationary',
+    tabs: [
+      { id: 'scene-01', label: 'Scene 1' },
+      { id: 'scene-02', label: 'Scene 2' },
+      { id: 'scene-03', label: 'Scene 3' },
+    ],
+    rows: [
+      [['real', 'Real Video'], ['condition', 'Condition (With Stationary)'], ['condition-nostatic', 'Condition (w/o Stationary)']],
+      [['ours', 'With Stationary Instances'], ['ablated', 'w/o Stationary Instances']],
+    ],
+  },
+
   appearance: {
     dir: 'videos/appearance',
     tabs: [
