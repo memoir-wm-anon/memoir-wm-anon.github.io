@@ -93,7 +93,7 @@
   <section id="ablations">
     <h2>Ablations</h2>
     <h3>Instance-level KV Caching</h3>
-    <p class="desc">Held-out nuPlan clips in which a target vehicle (green box) leaves the view and later returns, generated as the memory components are added one at a time.</p>
+    <p class="desc">Held-out Argoverse 2 and nuPlan clips generated as the memory components are added one at a time. The target vehicle (green box) must keep its appearance across generation chunks (Scene 1) or after leaving the view and returning (Scene 2).</p>
     <div class="compare" data-set="ablation-kv"></div>
     <h3>Stationary Instances</h3>
     <p class="desc">nuScenes validation scenes generated with and without stationary instances (buildings and vegetation) in the blocks-world condition. For this ablation, both models are trained from scratch for only 1,000 iterations, so the overall video quality is subpar; still, the two settings differ clearly in the speed and movement of the camera.</p>
