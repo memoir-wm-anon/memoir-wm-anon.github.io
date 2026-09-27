@@ -77,7 +77,7 @@ const SETS = {
   'ablation-kv': {
     dir: 'videos/ablation/kv-cache',
     tabs: [
-      { id: 'scene-03', label: 'Scene 1' },
+      { id: 'scene-04', label: 'Scene 1' },
       { id: 'scene-01', label: 'Scene 2' },
     ],
     rows: [
